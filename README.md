@@ -34,7 +34,7 @@ Implement a text-based version of the popular Plants vs Zombies (PvZ) game.
   - Has a plants arrayList, zombie arrayList, lawnMower boolean
 #### UML/Sequence Diagrams - MINH HOANG
 ##### UML 
-![alt text](https://github.com/dominhhoang4299/Diagrams/blob/master/UML-Class-M1.PNG) 
+![alt text](https://github.com/dominhhoang4299/Project-OOP/blob/master/Diagram.png) 
 
 ##### Sequence Diagram - Plant Class
 ![alt text](https://github.com/dominhhoang4299/Diagrams/blob/master/PlantClass.PNG) 
@@ -59,35 +59,33 @@ Implement a text-based version of the popular Plants vs Zombies (PvZ) game.
   * TileController -> Has Mouse listener, and anytime the user places a plant it will update the board with the updated plant position.
 
 #### JUnit Tests
-##### Plants 
-* Test Classes Include: 
+  ##### Plants 
+     * Test Classes Include: 
   - PlantTest CLASS -> testPlant(), testPlantCost(), testPlantHit(), testSetPlantHit(), testXPos(), testYPos()
   - PeashooterTest CLASS -> testPeashooterPosition(), testPeashooterHealth(), testPeashooterBuyThreshold()
   - SunflowerTest CLASS -> testSunfloerPosition()
 
-##### Zombies
-* Test Classes Include: 
+  ##### Zombies
+    * Test Classes Include: 
   - BasicZombieTest CLASS -> testZombieSpeed(), testZombieAttack(), testZombieType(), testZombieMovement(), testZombieIsNotDead(), testZombieIsDead()
-  ## Milestone 3 (master branch) - Completed On: Sunday, November 25th, 2019
+  #### Model View COntroller- Diagram
+ ![alt text](https://github.com/dominhhoang4299/Project-OOP/blob/master/MVC-sequence.png)
+  
+## Milestone 3 (master branch) - Completed On: Sunday, November 25th, 2019
 
-### Implementations
+    Implementations
 
 #### PLANTS - 
-Added 4 new Plants and an extra subclass; Explosive Plant 
+Added new Plants : FreezePeaShooter 
 type to the Plants vs. Zombies GUI:
-
-* Wallnut : subclass of Passive Plant Type
-  - Defensive plant type, used as a shield to protect other plants.
-  - Has a slightly longer health points compared to the other plants
-  - Cost: 50
-  - Hit Threshold: 20
 
 * Snow Pea Shooter : subclass of Shooter Plant Type
   - Shoots snow/frozen peas that damage and slow the zombies.
   - Cost: 175
   - Hit Threshold: 10
   - Attack: 3
-* Cherry Bombs
+  
+  
 #### GUI 
 * GUI Classes Implemented 
   * ImagePanel -> Used for drawing the lawn tiles on the grid panel. 
